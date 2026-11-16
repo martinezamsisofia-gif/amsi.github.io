@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>XV & XVIII | Amsi y Sara</title>
+<style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#000; display:flex; justify-content:center; min-height:100vh; }
+
+  .portada {
+    position: relative;
+    width: 100%;
+    max-width: 430px;
+    height: 100vh;
+    height: 100dvh;
+    overflow: hidden;
+    background: #000;
+  }
+
+  .fondo {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  /* SOBRE ENCIMA DEL FONDO */
+  .sobre-link {
+    position: absolute;
+    bottom: 12%;
+    left: 38%;
+    transform: translateX(-38%);
+    z-index: 3;
+    width: 50%;
+    display: block;
+    top: 40%;
+  }
+  .sobre {
+    width: 130%;
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.7);
+  }
+
+  .texto-abrir {
+    position: absolute;
+    bottom: 11%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 4;
+    width: 100%;
+    text-align: center;
+    color: #d6b878;
+    font-family: 'Great Vibes', 'Pinyon Script', 'Edwardian Script ITC', cursive;
+    font-size: 24px;
+    letter-spacing: 1px;
+    text-shadow: 0 0 10px rgba(214,184,120,0.5);
+    animation: brillo 2s infinite alternate;
+  }
+
+  @keyframes brillo {
+    from { opacity: 0.6; }
+    to { opacity: 1; }
+  }
+</style>
+</head>
+<body>
+
+  <main class="portada">
+    <img src="XV & XVIII.png" class="fondo" alt="Fondo">
+
+   <a href="invitacion.html" class="sobre-link">
+  <img src="sobre.jpe" class="sobre" alt="Abrir invitación">
+</a>
+
+    <p class="texto-abrir">Da click aquí</p>
+  </main>
+
+</body>
+</html>
